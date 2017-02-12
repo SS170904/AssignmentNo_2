@@ -15,10 +15,10 @@
      <div  ng-controller="ToBuyController as showList" >
       <h2>To Buy List:</h2>
       <ul class="list-group">
-        <li ng-repeat="item in showList.ToBuyitems">
-        <div style="width: 300px; border: 1px solid red; float: left;line-height:20px;"> {{item.quantity}} of {{item.name}}</div>
+        <li style="line-height:30px;" ng-repeat="item in showList.ToBuyitems">
+        <div style="width: 300px; float: left;"> {{item.quantity}} of {{item.name}}</div>
         <!--<span style="position: relative;">  {{item.quantity}} of {{item.name}} </span>-->
-        <div style="width: 300px; border: 1px solid red; float: right;">
+        <div style="width: 300px; float: right;">
           <button ng-click="showList.AddRemoveItem($index)" class="btn btn-link">Bought
         </button></div>
           <!--<span style="position: relative;left:50px;">
